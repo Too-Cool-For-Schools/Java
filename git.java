@@ -4,11 +4,13 @@ public class gg {
             {20, 60, 90},
             {10, 100, 100},
             {30, 75, 50},
-            {80, 30, 10}
-        };
+            {80, 30, 10} 
+        };                                // initiaize the score array 
 
-        String[] studentNames = {"Alice", "Bob", "Charlie", "Nora"};
-        String[] subjects = {"Math", "Science", "English"};
+        String[] studentNames = {"Alice", "Bob", "Charlie", "Nora"};  
+        // initializing 1D array which can be expressedas 2D array 1:n column. This one will go with system.out.println
+        
+        String[] subjects = {"Math", "Science", "English"}; //  initializing the 1D array. This one will go with System.out.print 
 
         String[][] results = new String[scores.length][scores[0].length];
         int pass = 0;
@@ -46,8 +48,9 @@ public class gg {
         System.out.println("\nTotal Pass: " + pass);
         System.out.println("Total Fail: " + fail);
 
-        double decimal = (double) pass / (pass + fail);
+        double decimal = (double) pass / (pass + fail);  // type casting from  integer to double is made here . 
         double passPercent = decimal * 100;
         System.out.printf("Pass Percentage: %.2f%%\n", passPercent);
     }
+
 }
